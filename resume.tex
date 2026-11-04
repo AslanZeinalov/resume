@@ -1,0 +1,186 @@
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english,russian]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+%----------FONT OPTIONS----------
+% Поддержка кириллицы и современный шрифт без засечек
+\usepackage[T2A]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[sfdefault]{roboto} % Если шрифт не находится, замените на \usepackage[default]{sourcesanspro}
+\renewcommand{\familydefault}{\sfdefault}
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+%----------HEADING----------
+\begin{center}
+    \textbf{\Huge Аслан Зейналов} \\ \vspace{4pt}
+    \small Аналитик данных (Data Analyst) \\ \vspace{4pt}
+    \small +7 (927) 230-33-31 $|$ \href{mailto:aslanzeinalov02@gmail.com}{aslanzeinalov02@gmail.com} $|$ 
+    \href{https://t.me/aslanzei}{@aslanzei} $|$
+    \href{https://github.com/AslanZeinalov}{GitHub} $|$ Казань, 24 года
+\end{center}
+
+%-----------ABOUT-----------
+\section{О себе}
+В процессе работы над учебными и практическими проектами приобрел уверенные навыки работы с данными: от сбора и очистки до поиска инсайтов и построения прогнозных моделей. Умею находить закономерности и аномалии в данных, используя их для улучшения бизнес-показателей. В данный момент нахожусь в поиске компании для прохождения стажировки и трудоустройства. С примерами моих проектов и исследований можно ознакомиться в профиле на GitHub.
+
+%-----------EDUCATION-----------
+\section{Образование}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Школа 21 (Сбер)}
+      {} % <-- Добавлен город (4-й аргумент)
+      {Программа Data Science}
+      {Октябрь 2025 -- настоящее время} % 
+      \resumeItemListStart
+        \resumeItem{Прошел конкурсный отбор на программу обучения.}
+      \resumeItemListEnd
+      
+    \resumeSubheading
+      {Уфимский топливно-энергетический колледж}
+      {} % <-- Добавлен город (4-й аргумент)
+      {Технология бурения нефтяных и газовых скважин}
+      {Сентябрь 2018 -- Июнь 2022}
+      \resumeItemListStart
+        \resumeItem{Окончил с отличием (красный диплом).}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+%-----------EXPERIENCE-----------
+\section{Опыт работы}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {ООО «ВБ-ВОСТОК»}
+      {} % <-- Добавлен город (4-й аргумент)
+      {Специалист отдела инвентаризации $\rightarrow$ Помощник руководителя отдела}
+      {Август 2022 -- Октябрь 2026} % <-- Исправлен год с 2026 на настоящее время
+      \resumeItemListStart
+        \resumeItem{Составлял отчеты в Excel по заполнению мест хранения, учету потерь и проведению работ на участке (сводные таблицы, формулы).}
+        \resumeItem{Управлял штатом из 5 сотрудников, занимался постановкой и контролем выполнения задач.}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+%-----------PROJECTS-----------
+\section{Проекты}
+    \resumeSubHeadingListStart
+    
+      \resumeProjectHeading
+          {\textbf{A/B-тест формы оплаты} $|$ \emph{Python, pandas, scipy, EDA, статистические тесты}}
+          {} % <-- Добавлен 2-й аргумент (год или ссылка)
+          \resumeItemListStart
+            \resumeItem{Провёл полный цикл продуктового анализа: от очистки данных и EDA до статистической проверки гипотезы. Выявил прирост конверсии +14.6 п.п. (p-value = $4 \cdot 10^{-14}$) и подготовил рекомендацию по запуску новой формы на 100\% пользователей.}
+            \resumeItem{\href{https://github.com/AslanZeinalov/AB-test-analysis}{Ссылка на репозиторий (GitHub)}}
+          \resumeItemListEnd
+          
+    \resumeProjectHeading
+          {\textbf{Комплексный анализ продаж и логистики сети веломагазинов} $|$ \emph{Python, SQL, EDA, бизнес-аналитика}}
+          {} % <-- Добавлен 2-й аргумент (год или ссылка)
+          \resumeItemListStart
+            \resumeItem{Обнаружил упущенную выручку в \$1.37 млн из-за логистических проблем и предложил решения по оптимизации запасов.}
+            \resumeItem{Провел RFM-сегментацию: выделил 26.4\% VIP-клиентов, приносящих 47.7\% выручки, и разработал стратегию их удержания.}
+            \resumeItem{\href{https://github.com/AslanZeinalov/retail_store_analysis}{Ссылка на репозиторий (GitHub)}}
+          \resumeItemListEnd
+          
+      \resumeProjectHeading
+          {\textbf{Дашборд для анализа интернет-магазина (138K+ заказов)} $|$ \emph{Power BI, DAX, Power Query, ETL}}
+          {} % <-- Добавлен 2-й аргумент
+          \resumeItemListStart
+            \resumeItem{Создал 6 интерактивных дашбордов с продвинутыми DAX-мерами (YoY growth, LTV, Repeat Rate) для мгновенной оценки бизнес-метрик, для CEO и руководителей отделов}
+            \resumeItem{Спроектировал модель данных (Star Schema) и настроил ETL-процессы для автоматического обновления отчетов.}
+            \resumeItem{\href{https://github.com/AslanZeinalov/E-Commerce-Sales-Analytics-dashboard}{Ссылка на репозиторий (GitHub)}}
+          \resumeItemListEnd
+          
+    \resumeSubHeadingListEnd
+
+%-----------SKILLS-----------
+\section{Навыки}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Hard Skills:} Python, SQL, PostgreSQL, Power BI, DAX, Power Query, Excel, pandas, numpy, matplotlib, scipy, scikit-learn, Machine Learning, Jupyter, Google Colab, EDA, AB-тесты, статистические тесты \\
+     \textbf{Soft Skills:} Презентация проектов, объяснение сложного простым языком, работа в команде, быстрая обучаемость \\
+     \textbf{Языки:} Русский (Родной), Английский (B1 -- Intermediate)
+    }}
+ \end{itemize}
+
+%-------------------------------------------
+\end{document}
